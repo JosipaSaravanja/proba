@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: #161616;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Fuse V.2 Display";
+    src: url("assets/FuseV.2Display-Book.woff2") format("woff2"),
+            url("assets/FuseV.2Display-BookItalic.woff2") format("woff2"),
+            url("assets/FuseV.2Display-ExtraBold.woff2") format("woff2"),
+            url("assets/FuseV.2Display-ExtraBoldItalic.woff2") format("woff2");
+    }
+
+.twisted-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.text{
+    position: absolute;
+    top: 745px;
+    margin-left: 209px;
+    width: 50%;
+}
+.text hr{
+opacity: 0.1;
+}
+.faq{
+    font-family: 'Fuse V.2 Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.faq-title{font-family: 'Fuse V.2 Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 68px;    
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    margin-bottom: 39.41px;
+    
+}
+
+.faq-title-help{
+    background: linear-gradient(89.12deg, #37F3E1 -40.27%, #A109FF 101.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.faqs{
+    padding-top: 33.49px;
+    padding-bottom: 33.49px;
+    font-family: 'Fuse V.2 Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #F5F5F7;
+}
+
+.twisted-img-phone{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .faq-title{
+        margin-bottom: 72px;
+    }
+    .twisted-img-phone{
+        display: block;
+        margin-left: -70px;
+        transform: rotate(7.49deg);
+        width: 840.55px;
+        height: 721.35px;
+    }
+    .twisted-img{
+        display: none;
+    }.text{
+        position: static;
+        margin: 0 24px 0 24px;
+        width: calc(100%  - 24px*2);
+    }
+    .faqs{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        line-height: 24px;
+    }
+  }
