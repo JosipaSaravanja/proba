@@ -10,6 +10,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #FFFFFF;
 }
 
 @font-face {
@@ -21,5 +22,11 @@ body{
 @font-face {
     font-family: "Fuse V.2 Display";
     src: url("assets/FuseV.2Display-Book.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Fuse V.2 Text";
+    src: url("assets/FuseV.2Text-Book.woff2") format("woff2");
     font-weight: 400;
 }

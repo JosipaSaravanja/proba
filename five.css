@@ -1,0 +1,148 @@
+/* .five{
+    aspect-ratio: 1/1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.five-background{
+    display: flex;
+    background: url(img/wave.png);
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; 
+    padding: 0;
+    height: calc(576/1440 * 100%);
+}
+.person{
+    display: flex;
+    align-self: flex-end;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.five-text{
+    width: 501px;
+    margin-right: 15%;
+}
+.five-text h3{
+    font-family: 'Fuse V.2 Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 81px;
+    line-height: 88px;
+    letter-spacing: -0.02em;
+    color: #F5F5F7;
+}
+
+.five-text p{
+    font-family: 'Fuse V.2 Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F5F5F7;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 24px auto 32px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .five-background{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.five-background img{
+    display: flex;
+    justify-self: baseline;
+}
+} */
+
+.five{
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+.five-text{
+    width: 501px;}
+
+.five-background{
+    display: flex;
+    background: url(img/wave.png);
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; 
+    padding: 0 20px;
+    height: calc(576/1440 * 100%);
+}
+.x{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.five-text h3{
+    font-family: 'Fuse V.2 Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 81px;
+    line-height: 88px;
+    letter-spacing: -0.02em;
+    color: #F5F5F7;
+}
+
+.five-text p{
+font-family: 'Fuse V.2 Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #F5F5F7;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 24px auto 33px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .five-background{
+        background: url(img/wave-mobile.png);
+        background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    background-size: 100%;
+    height: calc(949/375 * 100%);
+    max-height: 1000px;
+}
+.x{
+    flex-direction: column-reverse;
+    justify-items: baseline;
+}
+.five-text{
+    width: calc(100% - 20px*2);
+    text-align: center;
+    justify-items: center;
+    margin-bottom: calc(60px/375 *100%);
+}
+.five-text h3{font-family: 'Fuse V.2 Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 68px;
+    letter-spacing: -0.01em;
+    }
+.five-text p{
+font-family: 'Fuse V.2 Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}

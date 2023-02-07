@@ -1,174 +1,197 @@
+.questions {
+  margin-top: 575px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  color: #f5f5f7;
+  width: 100%;
+  flex-direction: column;
+  padding: 24px 104px;
+}
 
+.questions h2 {
+  display: flex;
+  font-family: "Fuse V.2 Display";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 122px;
+  line-height: 120px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
 
+.questions p {
+  font-family: "Fuse V.2 Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  color: #f5f5f7;
+}
 
-.ending h2{
-    display: flex;
-    font-family: 'Fuse V.2 Display';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 122px;
-    line-height: 120px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    margin-bottom: 50px;
-    color: #FFFFFF;
-  }
-  
-  .ending p{
-        font-family: 'Fuse V.2 Display';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 16px;
-        display: flex;
-        color: #F5F5F7;
-  }
-  .ending{
-    margin-top: 575px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    text-align: center;
-    color: #F5F5F7;
-    width: 100%;
-    flex-direction: column;
-  }
-  
-  .icons{
-    margin: 24px auto;
-    display: flex;
-    justify-content: center;
-  }
-  .icon{
-    display: flex;
-  }
-  .icon:not(:first-child){
-    margin-left: 37px;
-  }
-  .inputs{
-      margin-top: 105px;
-    display: flex;
-    flex-direction: column;
-  }
-  .inputs input:first-child{
-    background: rgba(245, 245, 247, 0.05);
+.questions-icons {
+  margin: 24px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.questions-icon {
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+.questions-icon:not(:first-child) {
+  margin-left: 31px;
+}
+
+.questions-icon:hover {
+  background-color: gray;
+}
+
+.questions-icon img {
+  display: flex;
+  width: 23px;
+}
+
+.questions-inputs {
+  margin-top: 105px;
+  display: flex;
+  flex-direction: column;
+}
+
+.questions-inputs input {
+  padding-left: 25px;
+  width: 504px;
+  height: 66.36px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #f5f5f710;
+}
+
+.questions-inputs input::placeholder {
+  font-family: "Fuse V.2 Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #f5f5f7;
+}
+
+.questions-inputs input:focus {
+  outline: none;
+}
+
+.questions-inputs input:first-child {
+  background: rgba(245, 245, 247, 0.05);
   backdrop-filter: blur(2px);
   border: none;
+}
+
+.questions-inputs div {
+  width: 100%;
+  margin-top: 8px;
+  text-align: right;
+  font-family: "Fuse V.2 Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #f5f5f7;
+}
+
+.questions-button:hover {
+  background-color: white;
+  color: black;
+  border: white 10;
+  border-image: linear-gradient(white, white) 10;
+  transition: 0.5s ease;
+}
+
+.questions-button {
+  letter-spacing: 0.08em;
+  margin-top: 30px;
+  font-family: "Fuse V.2 Display";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 10px 35px;
+  background-color: transparent;
+  border-image: linear-gradient(
+      124.93deg,
+      rgb(13, 143, 211) 5.44%,
+      rgb(11, 96, 187) 17.95%,
+      rgb(10, 58, 167) 36.44%,
+      rgb(106, 56, 125) 69.53%,
+      rgb(197, 55, 84) 105.59%,
+      rgb(250, 82, 64) 117.57%
+    )
+    10;
+  border-image-width: 1px;
+}
+
+@media screen and (max-width: 900px) {
+  .questions {
+    padding: 24px;
   }
-  .inputs input{
-    padding-left: 25px;
-    width: 504px;
-  height: 66.36px;
-    border: none;
-    background: transparent;
-    border-bottom: 1px solid #F5F5F710;
+
+  .questions h2 {
+    font-family: "Fuse V.2 Display";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #ffffff;
   }
-  .inputs input::placeholder{
-    font-family: 'Fuse V.2 Display';
+
+  .questions p {
+    font-family: "Fuse V.2 Display";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    line-height: 19px;
+  }
+
+  .questions-icon {
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    display: flex;
+  }
+
+  .questions-inputs {
+    margin-top: 36px;
+    width: 100%;
+  }
+
+  .questions-inputs input {
+    padding-left: 24px;
+    width: 100%;
+    height: 67px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #f5f5f710;
+  }
+  
+  .questions-numbers {
+    display: none;
+  }
+
+  .questions-button {
+    font-family: "Fuse V.2 Display";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
     line-height: 16px;
-    color: #F5F5F7;
+    letter-spacing: 0.08em;
   }
-  .inputs input:focus {
-    outline:none!important;
-  }
-  .inputs div{
-      width: 100%;
-      margin-top: 8px;
-      text-align: right;
-      font-family: 'Fuse V.2 Display';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 14px;
-      letter-spacing: 0.02em;
-      color: #F5F5F7;
-  }
-  .ending{
-      padding: 24px 104px;
-  }
-
-  @media screen and (max-width: 900px) {
-    .ending h2{font-family: 'Fuse V.2 Display';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 54px;
-        line-height: 68px;
-        text-align: center;
-        letter-spacing: -0.01em;
-        color: #FFFFFF;
-      }
-      .inputs{
-        margin-top: 36px;
-      }
-      .inputs input{
-        padding-left: 25px;
-        width: 327px;
-        height: 67px;
-        border: none;
-        background: transparent;
-        border-bottom: 1px solid #F5F5F710;
-      }
-
-
-
-      .ending{
-        padding: auto 24px;
-    }
-    
-    
-  footer{
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column-reverse;
-    font-family: 'Fuse V.2 Display';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-padding:42px 0 18px
-  }
-  .footer-icons{
-    flex-direction: column-reverse;
- }
-
-
-
-
-
-
-
-    }
-
-    footer{
-        width: 100%;
-        border-top: 1px solid #F5F5F710;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-family: 'Fuse V.2 Display';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 16px;
-        color: #F5F5F7;
-        padding:32px 104px 8px
-      }
-    
-      .network-icons{
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-      }
-     .footer-icons{
-        flex-direction: row;
-        display: flex;
-        align-items: center;
-     }
-     .network-icon{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-     }
+}

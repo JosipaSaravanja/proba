@@ -54,10 +54,6 @@
     right: -1056px;
 }
 
-.twisted-img-phone{
-    display: none;
-}
-
 @media screen and (max-width: 900px) {
     .faq-text{
         margin: 0 24px 0 24px;
@@ -73,16 +69,13 @@
         padding-bottom: 30px;
         line-height: 24px;
     }
-    
-    .twisted-img-phone{
-        display: block;
-        margin-left: -70px;
-        transform: rotate(7.49deg);
-        width: 840.55px;
-        height: 721.35px;
-    }
 
     .twisted-img{
-        display: none;
+        margin-left: -80px;
+        transform: rotate(7.49deg);
+        position: static;
+        width: 840.55px;
+        height: 721.35px;
+        display: block;
     }
 }
