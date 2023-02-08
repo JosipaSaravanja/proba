@@ -2,7 +2,6 @@
     width: 100%;
     border-top: 1px solid #F5F5F710;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-family: 'Fuse V.2 Display';
     font-style: normal;
@@ -52,4 +51,9 @@ padding:42px 0 18px
 
 
 
+    }
+    .footer:first-child{
+      justify-self: flex-start;
+    }.footer:last-child{
+      justify-self: flex-end;
     }

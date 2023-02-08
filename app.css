@@ -1,10 +1,26 @@
-.app h2{
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app > h2{
     font-family: 'Fuse V.2 Display';
-font-style: normal;
-font-weight: 800;
-font-size: 122px;
-line-height: 120px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 122px;
+    line-height: 120px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
 
-letter-spacing: -0.02em;
-
+.app-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.app-image{ 
+    background: url(img/Component\ 1.png); 
+    background-size: 71% 97%;
+    background-repeat:no-repeat; 
+    background-position: center;
 }
